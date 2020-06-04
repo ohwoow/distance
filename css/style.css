@@ -282,7 +282,6 @@ h1,h2,h3,h4,h5,h6 {
     border-bottom: 1px solid #d9d9d9;
 }
 .create-post__header-text {
-    color: #595959;
     font-weight: 600;
     padding: 9px 16px;
 }
@@ -311,6 +310,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .create-post__input:focus {
     outline: none;
+
 }
 .create-post__footer {
     padding: 16px;
@@ -322,10 +322,10 @@ h1,h2,h3,h4,h5,h6 {
     padding: 12px 12px 12px 44px;
     margin-right: 8px;
 
-    color: #595959;
     font-weight: 600;
 
     background: #F5F5F5;
+    color: #595959;
     border-radius: 48px;
     border: none;
 
@@ -368,4 +368,112 @@ h1,h2,h3,h4,h5,h6 {
 .btn-tag--options::before  {
     left: 17px;
     background-image: url(../img/dots.svg);
+}
+
+/* feed */
+
+
+.post {
+    background: #FFFFFF;
+
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    margin-bottom: 16px;
+}
+.post-header {
+    position: relative;
+    padding: 16px 16px 0;
+}
+.post-header .user__img {
+    width: 48px;
+    height: 48px;
+}
+.user__link {
+    margin-right: 12px;
+}
+
+.post__author-link {
+    color: #0050B3;
+    font-weight: 600;
+}
+.post__time {
+    position: relative;
+    color: #8C8C8C;
+    margin-right: 16px;
+}
+.post__time::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: -12px;
+
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+
+    background: #BFBFBF;
+}
+.post-date {
+    display: flex;
+    align-items: center;
+}
+.post__settings {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.post-options {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+
+    padding: 10px 0;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.post-content {
+    padding: 0;
+    margin: 0 16px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+
+
+.post-text a{
+   color: #096dd9;
+}
+.like {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.like-icon {
+    margin-right: 5px;
+    fill: #1890FF;
+}
+.post-icon {
+    fill: #595959;
+    margin-right: 8px;
+}
+
+.post-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px 0;
+}
+.post-buttons__btn {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.post-buttons__btn:hover .post-icon{
+    fill: #1890ff;
 }
