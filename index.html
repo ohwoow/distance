@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
     <header class="header">
         <div class="container">
             <div class="header__inner">
+                <button class="ham-menu">
+                    <span class="line">55555</span>
+                    <span class="line">55555</span>
+                    <span class="line">55555</span>
+                </button>
                 <form action="#" method="GET" class="form-search">
                     <input type="search" class="form-search__input" placeholder="Search">
                 </form>
@@ -53,6 +58,7 @@
     </header>
 
     <div class="main-content">
+        <div class="overlay"></div>
         <div class="container">
             <div class="main-content__wrapper">
                 <div class="menu-sidebar">
@@ -377,6 +383,128 @@
                             </div>
                         </div>
                     </div>
+
+                    <aside class="right-sidebar">
+                        <div class="stories">
+                            <div class="story-header">
+                                <h4 class="story-header__title">
+                                    Stories
+                                </h4>
+                                <div class="story__buttons">
+                                    <svg class="story-icon" width="14" height="14">
+                                        <use xlink:href="img/icons.svg#clock"></use>
+                                    </svg> 
+                                    <a href="#" class="story__link story__archive">  
+                                        Archive
+                                    </a>
+                                    <a href="#" class="story__link story__settings">Settings</a>
+                                </div>
+                            </div>
+                            <ul class="story-list">
+                                <li class="story__item story__add">
+                                    <a href="#" class="story__add-link">
+                                    <div class="story-add__img">
+                                        +
+                                    </div>
+                                    <div class="story__text">
+                                        <span class="story__name">Add to your story</span>
+                                        <span class="story__date">
+                                            Share a photo or video or write something
+                                        </span>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li class="story__item">
+                                    <a href="#" class="story__add-link">
+                                    <div class="story__img">
+                                        <img src="img/figma.png" alt="">
+                                    </div>
+                                    <div class="story__text">
+                                        <span class="story__name">Add to your story</span>
+                                        <span class="story__date">
+                                            6 hours ago
+                                        </span>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li class="story__item">
+                                    <a href="#" class="story__add-link">
+                                    <div class="story__img">
+                                        <img src="img/concuria.png" alt="">
+                                    </div>
+                                    <div class="story__text">
+                                        <span class="story__name">Add to your story</span>
+                                        <span class="story__date">
+                                            1 hours ago
+                                        </span>
+                                    </div>
+                                    </a>
+                                </li>
+                                <li class="story__item">
+                                    <a href="#" class="story__add-link">
+                                    <div class="story__img">
+                                        <img src="img/antDesign.png" alt="">
+                                    </div>
+                                    <div class="story__text">
+                                        <span class="story__name">Add to your story</span>
+                                        <span class="story__date">
+                                            3 hours ago
+                                        </span>
+                                    </div>
+                                    </a>
+                                </li>
+
+                                <a href="#" class="see-more story__see-more">See more...</a>
+                            </ul>
+                        </div>
+
+                        <div class="birthday">
+                            <div class="birthday__text">
+                                <svg class="gift-icon" width="20" height="20">
+                                    <use xlink:href="img/icons.svg#gift"></use>
+                                </svg> 
+                                <span class="birthday__name">
+                                    <a href="#" class="birthday__name-link">John Doe</a>'s  birthday today!
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="your-page">
+                            <div class="your-page__header">
+                                <h4 class="your-page__title">Your page</h4>
+                                <button class="your-page__options" type="button">
+                                    <img src="img/dots.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="page-info">
+                                <a href="#"> <img src="img/concuria.png" class="page__img" alt=""></a>
+                                <div class="page-info__text">
+                                    <a href="#" class="page__name">Concuria</a>
+                                    <div class="page__item">
+                                        <img src="img/msg.svg" width="14" height="14" alt="">
+                                        <a href="#" class="page__item-text">Messages</a>
+                                        <span class="page__msg-count"></span>
+                                    </div>
+                                    <div class="page__item">
+                                        <img src="img/notification.svg" width="14" height="14" alt="">
+                                        <a href="#" class="page__item-text">Notifications</a>
+                                        <span class="page__item-count page__notifications-count">1</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="page__buttons">
+                                <button type="button" class="page__btn page__btn-active">Likes</button>
+                                <button type="button" class="page__btn">Views</button>
+                                <button type="button" class="page__btn">Posts</button>
+                            </div>
+                            <div class="page-stat">
+                                <span class="page-stat__num">262</span>
+                                <span class="page-stat__time">5 likes this week</span>
+                            </div>
+                        </div>
+
+                    </aside>
                 </div>
             </div>
         </div>
